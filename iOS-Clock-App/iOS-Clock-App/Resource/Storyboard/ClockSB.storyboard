@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GGA-cr-MA8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--알람-->
+        <scene sceneID="jVc-Gc-ITO">
+            <objects>
+                <viewController id="rLA-5B-cxi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JKB-Lt-riu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dr2-k5-Z3n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="알람" image="alarm.fill" catalog="system" selectedImage="alarm.fill" id="2Jh-gO-KIw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KmK-86-nk4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-581"/>
+        </scene>
+        <!--세계 시계-->
+        <scene sceneID="gpn-1g-Dnv">
+            <objects>
+                <viewController storyboardIdentifier="WorldClockVC" id="z4f-zw-qPy" customClass="WorldClockVC" customModule="iOS_Clock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3m-0U-s3S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oX-tx-ikB">
+                                <rect key="frame" x="25" y="44" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="편집">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpEdit:" destination="z4f-zw-qPy" eventType="touchUpInside" id="72W-Ja-SNy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-DW-naK">
+                                <rect key="frame" x="371" y="48" width="18" height="22"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="touchUpAdd:" destination="z4f-zw-qPy" eventType="touchUpInside" id="NUI-pW-mrB"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMI-6d-j7L">
+                                <rect key="frame" x="0.0" y="74" width="414" height="690"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WorldClockCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldClockCell" rowHeight="78" id="jaH-rw-g9a" customClass="WorldClockCell" customModule="iOS_Clock_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jaH-rw-g9a" id="N4S-ls-JQb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-x9-LR9">
+                                                    <rect key="frame" x="25" y="18" width="31" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-AO-tHL">
+                                                    <rect key="frame" x="25" y="33" width="58.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liv-Gp-dGU">
+                                                    <rect key="frame" x="272" y="11" width="117" height="60"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVk-1M-Au5">
+                                                    <rect key="frame" x="192" y="27" width="78" height="39.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JZO-x9-LR9" firstAttribute="top" secondItem="N4S-ls-JQb" secondAttribute="top" constant="18" id="2Vc-YC-ekL"/>
+                                                <constraint firstItem="Liv-Gp-dGU" firstAttribute="top" secondItem="N4S-ls-JQb" secondAttribute="top" constant="11" id="2qT-tr-L1C"/>
+                                                <constraint firstItem="YVk-1M-Au5" firstAttribute="top" secondItem="N4S-ls-JQb" secondAttribute="topMargin" constant="16" id="323-Mo-vw2"/>
+                                                <constraint firstItem="JZO-x9-LR9" firstAttribute="leading" secondItem="N4S-ls-JQb" secondAttribute="leading" constant="25" id="5LJ-o8-Dqp"/>
+                                                <constraint firstAttribute="trailing" secondItem="Liv-Gp-dGU" secondAttribute="trailing" constant="25" id="Gof-da-zmR"/>
+                                                <constraint firstItem="eIG-AO-tHL" firstAttribute="top" secondItem="JZO-x9-LR9" secondAttribute="bottom" id="OAH-Kt-CdB"/>
+                                                <constraint firstItem="eIG-AO-tHL" firstAttribute="leading" secondItem="N4S-ls-JQb" secondAttribute="leading" constant="25" id="gqg-5O-Msf"/>
+                                                <constraint firstItem="Liv-Gp-dGU" firstAttribute="leading" secondItem="YVk-1M-Au5" secondAttribute="trailing" constant="2" id="uNo-YI-NAR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="countryLabel" destination="eIG-AO-tHL" id="Qal-R1-6cy"/>
+                                            <outlet property="dayAndNightLabel" destination="YVk-1M-Au5" id="M4t-ZE-OGE"/>
+                                            <outlet property="timeDifferenceLabel" destination="JZO-x9-LR9" id="lIy-hp-Lhh"/>
+                                            <outlet property="timeLabel" destination="Liv-Gp-dGU" id="rwM-QM-4vS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aLJ-Lk-u1X"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="K9B-DW-naK" firstAttribute="centerY" secondItem="8oX-tx-ikB" secondAttribute="centerY" id="GZO-rR-vAc"/>
+                            <constraint firstItem="8oX-tx-ikB" firstAttribute="leading" secondItem="aLJ-Lk-u1X" secondAttribute="leading" constant="25" id="S07-kd-Mo1"/>
+                            <constraint firstItem="aLJ-Lk-u1X" firstAttribute="bottom" secondItem="RMI-6d-j7L" secondAttribute="bottom" id="XRw-Jb-ffR"/>
+                            <constraint firstItem="RMI-6d-j7L" firstAttribute="leading" secondItem="aLJ-Lk-u1X" secondAttribute="leading" id="cHt-CP-3GP"/>
+                            <constraint firstItem="8oX-tx-ikB" firstAttribute="top" secondItem="aLJ-Lk-u1X" secondAttribute="top" id="o5J-fE-5us"/>
+                            <constraint firstItem="aLJ-Lk-u1X" firstAttribute="trailing" secondItem="K9B-DW-naK" secondAttribute="trailing" constant="25" id="rnh-Kb-370"/>
+                            <constraint firstItem="aLJ-Lk-u1X" firstAttribute="trailing" secondItem="RMI-6d-j7L" secondAttribute="trailing" id="tY7-63-KoA"/>
+                            <constraint firstItem="RMI-6d-j7L" firstAttribute="top" secondItem="8oX-tx-ikB" secondAttribute="bottom" id="xHd-Du-CUC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="세계 시계" image="globe" catalog="system" selectedImage="globe" id="gux-9X-FWS"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="editButton" destination="8oX-tx-ikB" id="UFW-FK-dDz"/>
+                        <outlet property="worldClockTableView" destination="RMI-6d-j7L" id="HYc-wv-OGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPe-jx-YfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="-1513.3928571428571"/>
+        </scene>
+        <!--Add World ClockVC-->
+        <scene sceneID="QxX-nh-j95">
+            <objects>
+                <viewController storyboardIdentifier="AddWorldClockVC" id="paa-0j-Cxx" customClass="AddWorldClockVC" customModule="iOS_Clock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oit-NP-CTI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도시 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77B-Th-62A">
+                                <rect key="frame" x="184.5" y="54" width="45" height="14.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-Ly-uAu">
+                                <rect key="frame" x="20" y="86.5" width="339" height="34"/>
+                                <color key="backgroundColor" red="0.43061882928274309" green="0.42853854508330952" blue="0.4326991134821766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.57796343518876936" green="0.57517134129896863" blue="0.5807555290785702" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekM-ty-5xy">
+                                <rect key="frame" x="364" y="87" width="30" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="취소">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-nu-OgR">
+                                <rect key="frame" x="0.0" y="130.5" width="414" height="765.5"/>
+                                <color key="backgroundColor" red="0.13076983215118401" green="0.13122948076737329" blue="0.13260842661594108" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryClockCell" id="Dpc-sg-IzA" customClass="CountryClockCell" customModule="iOS_Clock_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dpc-sg-IzA" id="OLd-W7-m6I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKz-lK-Q7o">
+                                                    <rect key="frame" x="20" y="11.5" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AKz-lK-Q7o" firstAttribute="leading" secondItem="OLd-W7-m6I" secondAttribute="leading" constant="20" id="mGI-v0-mNk"/>
+                                                <constraint firstItem="AKz-lK-Q7o" firstAttribute="centerY" secondItem="OLd-W7-m6I" secondAttribute="centerY" id="z5Y-aZ-gQf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="countryLabel" destination="AKz-lK-Q7o" id="eeC-Ud-d9K"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6CV-86-aHL"/>
+                        <color key="backgroundColor" red="0.22061139515802994" green="0.21954563962586554" blue="0.22167715069019434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jhC-nu-OgR" firstAttribute="top" secondItem="CXz-Ly-uAu" secondAttribute="bottom" constant="10" id="1Wg-KK-hkM"/>
+                            <constraint firstItem="ekM-ty-5xy" firstAttribute="centerY" secondItem="CXz-Ly-uAu" secondAttribute="centerY" id="3vt-My-QGE"/>
+                            <constraint firstItem="6CV-86-aHL" firstAttribute="trailing" secondItem="ekM-ty-5xy" secondAttribute="trailing" constant="20" id="7Ei-8o-DD0"/>
+                            <constraint firstAttribute="bottom" secondItem="jhC-nu-OgR" secondAttribute="bottom" id="D6a-c4-3sn"/>
+                            <constraint firstItem="jhC-nu-OgR" firstAttribute="leading" secondItem="6CV-86-aHL" secondAttribute="leading" id="JNW-4D-Pmj"/>
+                            <constraint firstItem="77B-Th-62A" firstAttribute="centerX" secondItem="Oit-NP-CTI" secondAttribute="centerX" id="L61-s0-w3h"/>
+                            <constraint firstItem="CXz-Ly-uAu" firstAttribute="top" secondItem="77B-Th-62A" secondAttribute="bottom" constant="18" id="TmN-ki-caf"/>
+                            <constraint firstItem="77B-Th-62A" firstAttribute="top" secondItem="6CV-86-aHL" secondAttribute="top" constant="10" id="VZ2-DB-b5i"/>
+                            <constraint firstItem="CXz-Ly-uAu" firstAttribute="leading" secondItem="6CV-86-aHL" secondAttribute="leading" constant="20" id="gcd-Mb-FEK"/>
+                            <constraint firstItem="ekM-ty-5xy" firstAttribute="leading" secondItem="CXz-Ly-uAu" secondAttribute="trailing" constant="5" id="s7R-5t-hRG"/>
+                            <constraint firstItem="6CV-86-aHL" firstAttribute="trailing" secondItem="jhC-nu-OgR" secondAttribute="trailing" id="wDG-lK-TJy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryTableView" destination="jhC-nu-OgR" id="jyY-12-vFi"/>
+                        <outlet property="searchTextField" destination="CXz-Ly-uAu" id="8lp-Pw-agu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msm-Ch-52b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="-1513.3928571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1gO-Is-4j6">
+            <objects>
+                <tabBarController id="GGA-cr-MA8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FXI-5G-Qlj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.029174733906984329" green="0.0070608998648822308" blue="0.0034896223805844784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="z4f-zw-qPy" kind="relationship" relationship="viewControllers" id="R3v-ci-Ehk"/>
+                        <segue destination="rLA-5B-cxi" kind="relationship" relationship="viewControllers" id="ax8-m6-AP6"/>
+                        <segue destination="GlG-bf-zdP" kind="relationship" relationship="viewControllers" id="jAH-xe-WBT"/>
+                        <segue destination="cSs-r4-6qv" kind="relationship" relationship="viewControllers" id="3kd-si-JuP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5U-Wx-oev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1909" y="-115"/>
+        </scene>
+        <!--타이머-->
+        <scene sceneID="i0a-UE-d8P">
+            <objects>
+                <viewController id="cSs-r4-6qv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IzA-0I-Y84">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Ic-tl-NTa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="타이머" image="timer" catalog="system" selectedImage="timer" id="pJj-Ky-x4I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeU-hJ-mjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="1274"/>
+        </scene>
+        <!--스톱워치-->
+        <scene sceneID="zyM-ov-QLb">
+            <objects>
+                <viewController id="GlG-bf-zdP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m0z-ix-0Cr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U6K-vM-PHt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="스톱워치" image="stopwatch.fill" catalog="system" selectedImage="stopwatch.fill" id="NcA-KP-Uc9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxn-xk-bOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="124" height="128"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

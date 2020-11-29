@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C43DB9D403224F088A722A7 /* Pods_iOS_Clock_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */; };
 		EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */; };
 		EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */; };
 		EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BA0256F53D4004C2E59 /* ViewController.swift */; };
 		EDE97BA4256F53D4004C2E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE97BA2256F53D4004C2E59 /* Main.storyboard */; };
 		EDE97BA6256F53D5004C2E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE97BA5256F53D5004C2E59 /* Assets.xcassets */; };
 		EDE97BA9256F53D5004C2E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE97BA7256F53D5004C2E59 /* LaunchScreen.storyboard */; };
+		EDE97BDA25728B33004C2E59 /* ClockSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE97BD925728B33004C2E59 /* ClockSB.storyboard */; };
+		EDE97BDD25728BC9004C2E59 /* WorldClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BDC25728BC9004C2E59 /* WorldClockVC.swift */; };
+		EDE97BE125729404004C2E59 /* WorldClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BE025729404004C2E59 /* WorldClockCell.swift */; };
+		EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BE32572948D004C2E59 /* WorldTime.swift */; };
+		EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */; };
+		EDE97BED25735269004C2E59 /* CountryClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BEC25735269004C2E59 /* CountryClockCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C7BA35B4BA55D4CB70C1416 /* Pods-iOS-Clock-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.release.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.release.xcconfig"; sourceTree = "<group>"; };
+		535F2A2E41B496BE89F65A26 /* Pods-iOS-Clock-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.debug.xcconfig"; sourceTree = "<group>"; };
+		9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Clock_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE97B99256F53D4004C2E59 /* iOS-Clock-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Clock-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		EDE97BA5256F53D5004C2E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE97BA8256F53D5004C2E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDE97BAA256F53D5004C2E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE97BD925728B33004C2E59 /* ClockSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClockSB.storyboard; sourceTree = "<group>"; };
+		EDE97BDC25728BC9004C2E59 /* WorldClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockVC.swift; sourceTree = "<group>"; };
+		EDE97BE025729404004C2E59 /* WorldClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockCell.swift; sourceTree = "<group>"; };
+		EDE97BE32572948D004C2E59 /* WorldTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTime.swift; sourceTree = "<group>"; };
+		EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorldClockVC.swift; sourceTree = "<group>"; };
+		EDE97BEC25735269004C2E59 /* CountryClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClockCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C43DB9D403224F088A722A7 /* Pods_iOS_Clock_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BE22C0023F54D551349A250 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				535F2A2E41B496BE89F65A26 /* Pods-iOS-Clock-App.debug.xcconfig */,
+				4C7BA35B4BA55D4CB70C1416 /* Pods-iOS-Clock-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CDD900B059C4C5152CF7A4C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDE97B90256F53D4004C2E59 = {
 			isa = PBXGroup;
 			children = (
 				EDE97B9B256F53D4004C2E59 /* iOS-Clock-App */,
 				EDE97B9A256F53D4004C2E59 /* Products */,
+				2BE22C0023F54D551349A250 /* Pods */,
+				CDD900B059C4C5152CF7A4C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,77 @@
 		EDE97B9B256F53D4004C2E59 /* iOS-Clock-App */ = {
 			isa = PBXGroup;
 			children = (
-				EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */,
-				EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */,
-				EDE97BA0256F53D4004C2E59 /* ViewController.swift */,
-				EDE97BA2256F53D4004C2E59 /* Main.storyboard */,
-				EDE97BA5256F53D5004C2E59 /* Assets.xcassets */,
-				EDE97BA7256F53D5004C2E59 /* LaunchScreen.storyboard */,
-				EDE97BAA256F53D5004C2E59 /* Info.plist */,
+				EDE97BD325728984004C2E59 /* Sources */,
+				EDE97BD12572894D004C2E59 /* Resource */,
 			);
 			path = "iOS-Clock-App";
+			sourceTree = "<group>";
+		};
+		EDE97BD12572894D004C2E59 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BAA256F53D5004C2E59 /* Info.plist */,
+				EDE97BA5256F53D5004C2E59 /* Assets.xcassets */,
+				EDE97BD225728955004C2E59 /* Storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDE97BD225728955004C2E59 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BA2256F53D4004C2E59 /* Main.storyboard */,
+				EDE97BA7256F53D5004C2E59 /* LaunchScreen.storyboard */,
+				EDE97BD925728B33004C2E59 /* ClockSB.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EDE97BD325728984004C2E59 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BD7257289C7004C2E59 /* Cells */,
+				EDE97BD6257289C1004C2E59 /* Views */,
+				EDE97BD525728999004C2E59 /* ViewControllers */,
+				EDE97BD425728994004C2E59 /* Models */,
+				EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */,
+				EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDE97BD425728994004C2E59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BE32572948D004C2E59 /* WorldTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDE97BD525728999004C2E59 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BA0256F53D4004C2E59 /* ViewController.swift */,
+				EDE97BDC25728BC9004C2E59 /* WorldClockVC.swift */,
+				EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EDE97BD6257289C1004C2E59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDE97BD7257289C7004C2E59 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EDE97BE025729404004C2E59 /* WorldClockCell.swift */,
+				EDE97BEC25735269004C2E59 /* CountryClockCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDE97BAD256F53D5004C2E59 /* Build configuration list for PBXNativeTarget "iOS-Clock-App" */;
 			buildPhases = (
+				5E014CF21D0E7801EA35CF9D /* [CP] Check Pods Manifest.lock */,
 				EDE97B95256F53D4004C2E59 /* Sources */,
 				EDE97B96256F53D4004C2E59 /* Frameworks */,
 				EDE97B97256F53D4004C2E59 /* Resources */,
+				931EA80B608A99057BE6737B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +226,54 @@
 			files = (
 				EDE97BA9256F53D5004C2E59 /* LaunchScreen.storyboard in Resources */,
 				EDE97BA6256F53D5004C2E59 /* Assets.xcassets in Resources */,
+				EDE97BDA25728B33004C2E59 /* ClockSB.storyboard in Resources */,
 				EDE97BA4256F53D4004C2E59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E014CF21D0E7801EA35CF9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Clock-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		931EA80B608A99057BE6737B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDE97B95256F53D4004C2E59 /* Sources */ = {
@@ -138,6 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */,
+				EDE97BED25735269004C2E59 /* CountryClockCell.swift in Sources */,
+				EDE97BDD25728BC9004C2E59 /* WorldClockVC.swift in Sources */,
+				EDE97BE125729404004C2E59 /* WorldClockCell.swift in Sources */,
+				EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */,
+				EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */,
 				EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */,
 				EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,11 +431,12 @@
 		};
 		EDE97BAE256F53D5004C2E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535F2A2E41B496BE89F65A26 /* Pods-iOS-Clock-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "iOS-Clock-App/Info.plist";
+				INFOPLIST_FILE = "iOS-Clock-App/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +450,12 @@
 		};
 		EDE97BAF256F53D5004C2E59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7BA35B4BA55D4CB70C1416 /* Pods-iOS-Clock-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "iOS-Clock-App/Info.plist";
+				INFOPLIST_FILE = "iOS-Clock-App/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

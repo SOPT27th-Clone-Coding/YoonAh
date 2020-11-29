@@ -68,18 +68,18 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-AO-tHL">
-                                                    <rect key="frame" x="25" y="33" width="58.5" height="27.5"/>
+                                                    <rect key="frame" x="25" y="33" width="162" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liv-Gp-dGU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liv-Gp-dGU">
                                                     <rect key="frame" x="272" y="11" width="117" height="60"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVk-1M-Au5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVk-1M-Au5">
                                                     <rect key="frame" x="192" y="27" width="78" height="39.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +91,7 @@
                                                 <constraint firstItem="Liv-Gp-dGU" firstAttribute="top" secondItem="N4S-ls-JQb" secondAttribute="top" constant="11" id="2qT-tr-L1C"/>
                                                 <constraint firstItem="YVk-1M-Au5" firstAttribute="top" secondItem="N4S-ls-JQb" secondAttribute="topMargin" constant="16" id="323-Mo-vw2"/>
                                                 <constraint firstItem="JZO-x9-LR9" firstAttribute="leading" secondItem="N4S-ls-JQb" secondAttribute="leading" constant="25" id="5LJ-o8-Dqp"/>
+                                                <constraint firstItem="YVk-1M-Au5" firstAttribute="leading" secondItem="eIG-AO-tHL" secondAttribute="trailing" constant="5" id="6mC-Ca-5kz"/>
                                                 <constraint firstAttribute="trailing" secondItem="Liv-Gp-dGU" secondAttribute="trailing" constant="25" id="Gof-da-zmR"/>
                                                 <constraint firstItem="eIG-AO-tHL" firstAttribute="top" secondItem="JZO-x9-LR9" secondAttribute="bottom" id="OAH-Kt-CdB"/>
                                                 <constraint firstItem="eIG-AO-tHL" firstAttribute="leading" secondItem="N4S-ls-JQb" secondAttribute="leading" constant="25" id="gqg-5O-Msf"/>
@@ -178,13 +179,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKz-lK-Q7o">
-                                                    <rect key="frame" x="20" y="11.5" width="45" height="21"/>
+                                                    <rect key="frame" x="20" y="11.5" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="AKz-lK-Q7o" secondAttribute="trailing" constant="20" id="S8y-0q-599"/>
                                                 <constraint firstItem="AKz-lK-Q7o" firstAttribute="leading" secondItem="OLd-W7-m6I" secondAttribute="leading" constant="20" id="mGI-v0-mNk"/>
                                                 <constraint firstItem="AKz-lK-Q7o" firstAttribute="centerY" secondItem="OLd-W7-m6I" secondAttribute="centerY" id="z5Y-aZ-gQf"/>
                                             </constraints>

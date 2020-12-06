@@ -20,6 +20,18 @@
 		EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BE32572948D004C2E59 /* WorldTime.swift */; };
 		EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */; };
 		EDE97BED25735269004C2E59 /* CountryClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BEC25735269004C2E59 /* CountryClockCell.swift */; };
+		EDE97C40257C7AE7004C2E59 /* AlarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C3F257C7AE7004C2E59 /* AlarmVC.swift */; };
+		EDE97C47257C7BD0004C2E59 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C46257C7BD0004C2E59 /* AlarmCell.swift */; };
+		EDE97C4A257C7D1C004C2E59 /* SleepAlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C49257C7D1C004C2E59 /* SleepAlarmCell.swift */; };
+		EDE97C4D257C82B2004C2E59 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C4C257C82B2004C2E59 /* Alarm.swift */; };
+		EDE97C50257C9CE7004C2E59 /* SleepAlarmEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C4F257C9CE7004C2E59 /* SleepAlarmEditVC.swift */; };
+		EDE97C53257CA726004C2E59 /* AddAlarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C52257CA726004C2E59 /* AddAlarmVC.swift */; };
+		EDE97C56257CB3AA004C2E59 /* AlarmRepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C55257CB3AA004C2E59 /* AlarmRepeatCell.swift */; };
+		EDE97C59257CB3FF004C2E59 /* AlarmLavelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C58257CB3FF004C2E59 /* AlarmLavelCell.swift */; };
+		EDE97C5C257CB41A004C2E59 /* AlarmSoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C5B257CB41A004C2E59 /* AlarmSoundCell.swift */; };
+		EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */; };
+		EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */; };
+		EDE97C65257D1004004C2E59 /* RepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C64257D1004004C2E59 /* RepeatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +52,18 @@
 		EDE97BE32572948D004C2E59 /* WorldTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTime.swift; sourceTree = "<group>"; };
 		EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorldClockVC.swift; sourceTree = "<group>"; };
 		EDE97BEC25735269004C2E59 /* CountryClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClockCell.swift; sourceTree = "<group>"; };
+		EDE97C3F257C7AE7004C2E59 /* AlarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmVC.swift; sourceTree = "<group>"; };
+		EDE97C46257C7BD0004C2E59 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		EDE97C49257C7D1C004C2E59 /* SleepAlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAlarmCell.swift; sourceTree = "<group>"; };
+		EDE97C4C257C82B2004C2E59 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		EDE97C4F257C9CE7004C2E59 /* SleepAlarmEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAlarmEditVC.swift; sourceTree = "<group>"; };
+		EDE97C52257CA726004C2E59 /* AddAlarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmVC.swift; sourceTree = "<group>"; };
+		EDE97C55257CB3AA004C2E59 /* AlarmRepeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRepeatCell.swift; sourceTree = "<group>"; };
+		EDE97C58257CB3FF004C2E59 /* AlarmLavelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLavelCell.swift; sourceTree = "<group>"; };
+		EDE97C5B257CB41A004C2E59 /* AlarmSoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundCell.swift; sourceTree = "<group>"; };
+		EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAgainCell.swift; sourceTree = "<group>"; };
+		EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRepeatVC.swift; sourceTree = "<group>"; };
+		EDE97C64257D1004004C2E59 /* RepeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE97BE32572948D004C2E59 /* WorldTime.swift */,
+				EDE97C4C257C82B2004C2E59 /* Alarm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +170,10 @@
 				EDE97BA0256F53D4004C2E59 /* ViewController.swift */,
 				EDE97BDC25728BC9004C2E59 /* WorldClockVC.swift */,
 				EDE97BE925734A21004C2E59 /* AddWorldClockVC.swift */,
+				EDE97C3F257C7AE7004C2E59 /* AlarmVC.swift */,
+				EDE97C4F257C9CE7004C2E59 /* SleepAlarmEditVC.swift */,
+				EDE97C52257CA726004C2E59 /* AddAlarmVC.swift */,
+				EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +190,13 @@
 			children = (
 				EDE97BE025729404004C2E59 /* WorldClockCell.swift */,
 				EDE97BEC25735269004C2E59 /* CountryClockCell.swift */,
+				EDE97C46257C7BD0004C2E59 /* AlarmCell.swift */,
+				EDE97C49257C7D1C004C2E59 /* SleepAlarmCell.swift */,
+				EDE97C55257CB3AA004C2E59 /* AlarmRepeatCell.swift */,
+				EDE97C58257CB3FF004C2E59 /* AlarmLavelCell.swift */,
+				EDE97C5B257CB41A004C2E59 /* AlarmSoundCell.swift */,
+				EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */,
+				EDE97C64257D1004004C2E59 /* RepeatCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -280,14 +316,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE97C59257CB3FF004C2E59 /* AlarmLavelCell.swift in Sources */,
 				EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */,
+				EDE97C40257C7AE7004C2E59 /* AlarmVC.swift in Sources */,
+				EDE97C4A257C7D1C004C2E59 /* SleepAlarmCell.swift in Sources */,
+				EDE97C65257D1004004C2E59 /* RepeatCell.swift in Sources */,
 				EDE97BED25735269004C2E59 /* CountryClockCell.swift in Sources */,
 				EDE97BDD25728BC9004C2E59 /* WorldClockVC.swift in Sources */,
+				EDE97C50257C9CE7004C2E59 /* SleepAlarmEditVC.swift in Sources */,
+				EDE97C5C257CB41A004C2E59 /* AlarmSoundCell.swift in Sources */,
+				EDE97C53257CA726004C2E59 /* AddAlarmVC.swift in Sources */,
+				EDE97C56257CB3AA004C2E59 /* AlarmRepeatCell.swift in Sources */,
 				EDE97BE125729404004C2E59 /* WorldClockCell.swift in Sources */,
+				EDE97C47257C7BD0004C2E59 /* AlarmCell.swift in Sources */,
 				EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */,
 				EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */,
+				EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */,
 				EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */,
+				EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */,
 				EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */,
+				EDE97C4D257C82B2004C2E59 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

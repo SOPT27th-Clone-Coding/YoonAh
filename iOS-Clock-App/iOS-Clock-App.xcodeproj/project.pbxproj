@@ -32,6 +32,7 @@
 		EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */; };
 		EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */; };
 		EDE97C65257D1004004C2E59 /* RepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C64257D1004004C2E59 /* RepeatCell.swift */; };
+		EDE97C68257D2135004C2E59 /* AlarmLavelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97C67257D2135004C2E59 /* AlarmLavelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAgainCell.swift; sourceTree = "<group>"; };
 		EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRepeatVC.swift; sourceTree = "<group>"; };
 		EDE97C64257D1004004C2E59 /* RepeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatCell.swift; sourceTree = "<group>"; };
+		EDE97C67257D2135004C2E59 /* AlarmLavelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLavelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				EDE97C4F257C9CE7004C2E59 /* SleepAlarmEditVC.swift */,
 				EDE97C52257CA726004C2E59 /* AddAlarmVC.swift */,
 				EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */,
+				EDE97C67257D2135004C2E59 /* AlarmLavelVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				EDE97C59257CB3FF004C2E59 /* AlarmLavelCell.swift in Sources */,
 				EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */,
+				EDE97C68257D2135004C2E59 /* AlarmLavelVC.swift in Sources */,
 				EDE97C40257C7AE7004C2E59 /* AlarmVC.swift in Sources */,
 				EDE97C4A257C7D1C004C2E59 /* SleepAlarmCell.swift in Sources */,
 				EDE97C65257D1004004C2E59 /* RepeatCell.swift in Sources */,

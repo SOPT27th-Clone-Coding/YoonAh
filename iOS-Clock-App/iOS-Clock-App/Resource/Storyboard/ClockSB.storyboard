@@ -384,11 +384,11 @@
                                             <outlet property="repeatLabel" destination="LaP-XD-yLk" id="hdA-BF-05j"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlarmLavelCell" id="j5C-Ny-mzd" customClass="AlarmLavelCell" customModule="iOS_Clock_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlarmLavelCell" id="j5C-Ny-mzd" customClass="AlarmLavelCell" customModule="iOS_Clock_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j5C-Ny-mzd" id="d1l-1P-QnP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="레이블" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YC-ql-7ZK">
@@ -398,33 +398,29 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZk-n3-VBn">
-                                                    <rect key="frame" x="341" y="11" width="30" height="21"/>
+                                                    <rect key="frame" x="348" y="11.5" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xY-Kr-QMt">
-                                                    <rect key="frame" x="376" y="11" width="13" height="22"/>
-                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="chevron.right" catalog="system"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="7YC-ql-7ZK" firstAttribute="centerY" secondItem="d1l-1P-QnP" secondAttribute="centerY" id="Amy-Eh-k2U"/>
-                                                <constraint firstItem="5xY-Kr-QMt" firstAttribute="top" secondItem="CZk-n3-VBn" secondAttribute="top" id="M3A-Iw-fH0"/>
-                                                <constraint firstItem="5xY-Kr-QMt" firstAttribute="centerY" secondItem="d1l-1P-QnP" secondAttribute="centerY" id="MFC-G3-bKx"/>
+                                                <constraint firstAttribute="trailing" secondItem="CZk-n3-VBn" secondAttribute="trailing" constant="5" id="FWT-Du-Q1p"/>
                                                 <constraint firstItem="7YC-ql-7ZK" firstAttribute="leading" secondItem="d1l-1P-QnP" secondAttribute="leading" constant="25" id="NYU-eX-RpO"/>
-                                                <constraint firstItem="5xY-Kr-QMt" firstAttribute="leading" secondItem="CZk-n3-VBn" secondAttribute="trailing" constant="5" id="ezf-X7-Mrc"/>
-                                                <constraint firstAttribute="trailing" secondItem="5xY-Kr-QMt" secondAttribute="trailing" constant="25" id="vH9-ki-AGR"/>
+                                                <constraint firstItem="CZk-n3-VBn" firstAttribute="centerY" secondItem="d1l-1P-QnP" secondAttribute="centerY" id="qhE-FZ-m53"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="lavelLabel" destination="CZk-n3-VBn" id="Pwj-KH-7Ku"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlarmSoundCell" id="Yep-55-z9Q" customClass="AlarmSoundCell" customModule="iOS_Clock_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlarmSoundCell" id="Yep-55-z9Q" customClass="AlarmSoundCell" customModule="iOS_Clock_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yep-55-z9Q" id="aXg-ia-L6p">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사운드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W9-ZB-Bq6">
@@ -434,24 +430,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="녹차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-J1-3yP">
-                                                    <rect key="frame" x="341" y="11" width="30" height="21"/>
+                                                    <rect key="frame" x="348" y="11.5" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-bP-XT8">
-                                                    <rect key="frame" x="376" y="11" width="13" height="22"/>
-                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="chevron.right" catalog="system"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1a2-J1-3yP" firstAttribute="top" secondItem="KLK-bP-XT8" secondAttribute="top" id="06f-af-g3a"/>
                                                 <constraint firstItem="7W9-ZB-Bq6" firstAttribute="centerY" secondItem="aXg-ia-L6p" secondAttribute="centerY" id="EkC-aQ-Kbg"/>
                                                 <constraint firstItem="7W9-ZB-Bq6" firstAttribute="leading" secondItem="aXg-ia-L6p" secondAttribute="leading" constant="25" id="Hgh-fm-2sO"/>
-                                                <constraint firstItem="KLK-bP-XT8" firstAttribute="leading" secondItem="1a2-J1-3yP" secondAttribute="trailing" constant="5" id="f8n-vU-bBh"/>
-                                                <constraint firstItem="KLK-bP-XT8" firstAttribute="centerY" secondItem="aXg-ia-L6p" secondAttribute="centerY" id="l47-aZ-21Z"/>
-                                                <constraint firstAttribute="trailing" secondItem="KLK-bP-XT8" secondAttribute="trailing" constant="25" id="y0P-df-tWg"/>
+                                                <constraint firstItem="1a2-J1-3yP" firstAttribute="centerY" secondItem="aXg-ia-L6p" secondAttribute="centerY" id="uiZ-rh-NgB"/>
+                                                <constraint firstAttribute="trailing" secondItem="1a2-J1-3yP" secondAttribute="trailing" constant="5" id="vyl-zL-mfZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -509,6 +498,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85V-Vf-gsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="-581"/>
+        </scene>
+        <!--Alarm LavelVC-->
+        <scene sceneID="3Gb-Nk-aZb">
+            <objects>
+                <viewController storyboardIdentifier="AlarmLavelVC" id="Bit-Py-JpY" customClass="AlarmLavelVC" customModule="iOS_Clock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F1b-la-a9E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5W5-5W-6oc">
+                                <rect key="frame" x="0.0" y="144" width="414" height="34"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zL3-Ub-AhB"/>
+                        <color key="backgroundColor" red="0.090197719630000006" green="0.08620532602" blue="0.090196706350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5W5-5W-6oc" firstAttribute="top" secondItem="zL3-Ub-AhB" secondAttribute="top" constant="100" id="P4O-Tl-QzQ"/>
+                            <constraint firstItem="5W5-5W-6oc" firstAttribute="leading" secondItem="zL3-Ub-AhB" secondAttribute="leading" id="dxh-MG-d3D"/>
+                            <constraint firstItem="zL3-Ub-AhB" firstAttribute="trailing" secondItem="5W5-5W-6oc" secondAttribute="trailing" id="hc6-eA-oVH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yJE-my-RDK"/>
+                    <connections>
+                        <outlet property="lavelTextField" destination="5W5-5W-6oc" id="rQu-Om-xS5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znQ-HL-FUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2411" y="-200"/>
         </scene>
         <!--Alarm RepeatVC-->
         <scene sceneID="NuI-2P-tI2">
@@ -568,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Fr-dp-6Pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="-834"/>
+            <point key="canvasLocation" x="2404" y="-873"/>
         </scene>
         <!--세계 시계-->
         <scene sceneID="gpn-1g-Dnv">
@@ -828,7 +850,6 @@
     <resources>
         <image name="alarm.fill" catalog="system" width="124" height="128"/>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>

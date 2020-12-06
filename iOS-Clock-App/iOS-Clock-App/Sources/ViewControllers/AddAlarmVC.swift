@@ -12,6 +12,7 @@ class AddAlarmVC: UIViewController {
     @IBOutlet weak var alarmTableView: UITableView!
     
     var sampleData: [String] = []
+    var lavelString: String?
     
     var saveData: ((String) -> Void)?
     
@@ -89,6 +90,7 @@ extension AddAlarmVC: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: AlarmLavelCell.identifier) as? AlarmLavelCell else {
                 return UITableViewCell()
             }
+            cell.setLavel(lavel: lavelString ?? "알람")
             cell.selectionStyle = .none
             return cell
         }
@@ -120,6 +122,18 @@ extension AddAlarmVC: UITableViewDelegate {
                 self.alarmTableView.reloadData()
             }
             dvc.title = "반복"
+            self.navigationController?.pushViewController(dvc, animated: true)
+        }
+        else if indexPath.section == 1 {
+            guard let dvc = self.storyboard?.instantiateViewController(identifier:
+            "AlarmLavelVC") as? AlarmLavelVC else {
+                return
+            }
+            dvc.saveTextFieldData = { text in
+                self.lavelString = text
+                self.alarmTableView.reloadData()
+            }
+            dvc.title = "레이블"
             self.navigationController?.pushViewController(dvc, animated: true)
         }
     }

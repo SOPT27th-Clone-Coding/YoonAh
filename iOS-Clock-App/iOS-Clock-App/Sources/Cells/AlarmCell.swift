@@ -24,7 +24,6 @@ class AlarmCell: UITableViewCell {
     }
     
     func setAlarm(alarm: Alarm) {
-        
         alarmTimeLabel.text = alarm.alarmTime
         dayAndNightLabel.text = alarm.dayAndNight
     }

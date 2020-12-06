@@ -144,8 +144,10 @@ extension AlarmVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if indexPath.section != 0 {
             if (editingStyle == .delete) {
-                alarm.remove(at: indexPath.row)
-                alarmTableView.deleteRows(at: [indexPath], with: .fade)
+                if !(alarm.isEmpty) {
+                    alarm.remove(at: indexPath.row)
+                    alarmTableView.deleteRows(at: [indexPath], with: .fade)
+                }
             }
         }
     }

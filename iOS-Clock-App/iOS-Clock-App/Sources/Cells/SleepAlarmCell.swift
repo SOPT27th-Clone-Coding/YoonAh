@@ -31,6 +31,7 @@ class SleepAlarmCell: UITableViewCell {
     func setUpAlarm() {
         alarmLabel.text = "알람 있음"
         alarmLabel.textColor = .white
+        editButton.isHidden = true
     }
     
     @IBAction func touchUpEdit(_ sender: Any) {

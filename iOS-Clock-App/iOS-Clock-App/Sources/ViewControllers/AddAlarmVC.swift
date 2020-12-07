@@ -12,6 +12,7 @@ class AddAlarmVC: UIViewController {
     @IBOutlet weak var alarmTableView: UITableView!
     
     var sampleData: [String] = []
+    var sampleSong: [String] = []
     var lavelString: String?
     
     var saveData: ((String) -> Void)?
@@ -98,6 +99,7 @@ extension AddAlarmVC: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: AlarmSoundCell.identifier) as? AlarmSoundCell else {
                 return UITableViewCell()
             }
+            cell.setLabel(song: sampleSong)
             cell.selectionStyle = .none
             return cell
         }
@@ -134,6 +136,19 @@ extension AddAlarmVC: UITableViewDelegate {
                 self.alarmTableView.reloadData()
             }
             dvc.title = "레이블"
+            self.navigationController?.pushViewController(dvc, animated: true)
+        }
+        else if indexPath.section == 2 {
+            guard let dvc = self.storyboard?.instantiateViewController(identifier:
+            "AlarmSoundVC") as? AlarmSoundVC else {
+                return
+            }
+            sampleSong.removeAll()
+            dvc.saveSongs = { song in
+                self.sampleSong.append(contentsOf: song)
+                self.alarmTableView.reloadData()
+            }
+            dvc.title = "사운드"
             self.navigationController?.pushViewController(dvc, animated: true)
         }
     }

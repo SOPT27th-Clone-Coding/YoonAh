@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C43DB9D403224F088A722A7 /* Pods_iOS_Clock_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */; };
+		ED9554F3257E0FFD00D90861 /* AlarmSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */; };
+		ED9554F6257E11FD00D90861 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F5257E11FD00D90861 /* SoundCell.swift */; };
 		EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */; };
 		EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */; };
 		EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BA0256F53D4004C2E59 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		4C7BA35B4BA55D4CB70C1416 /* Pods-iOS-Clock-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.release.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.release.xcconfig"; sourceTree = "<group>"; };
 		535F2A2E41B496BE89F65A26 /* Pods-iOS-Clock-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Clock_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundVC.swift; sourceTree = "<group>"; };
+		ED9554F5257E11FD00D90861 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
 		EDE97B99256F53D4004C2E59 /* iOS-Clock-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Clock-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				EDE97C52257CA726004C2E59 /* AddAlarmVC.swift */,
 				EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */,
 				EDE97C67257D2135004C2E59 /* AlarmLavelVC.swift */,
+				ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				EDE97C5B257CB41A004C2E59 /* AlarmSoundCell.swift */,
 				EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */,
 				EDE97C64257D1004004C2E59 /* RepeatCell.swift */,
+				ED9554F5257E11FD00D90861 /* SoundCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,12 +329,14 @@
 				EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */,
 				EDE97C68257D2135004C2E59 /* AlarmLavelVC.swift in Sources */,
 				EDE97C40257C7AE7004C2E59 /* AlarmVC.swift in Sources */,
+				ED9554F3257E0FFD00D90861 /* AlarmSoundVC.swift in Sources */,
 				EDE97C4A257C7D1C004C2E59 /* SleepAlarmCell.swift in Sources */,
 				EDE97C65257D1004004C2E59 /* RepeatCell.swift in Sources */,
 				EDE97BED25735269004C2E59 /* CountryClockCell.swift in Sources */,
 				EDE97BDD25728BC9004C2E59 /* WorldClockVC.swift in Sources */,
 				EDE97C50257C9CE7004C2E59 /* SleepAlarmEditVC.swift in Sources */,
 				EDE97C5C257CB41A004C2E59 /* AlarmSoundCell.swift in Sources */,
+				ED9554F6257E11FD00D90861 /* SoundCell.swift in Sources */,
 				EDE97C53257CA726004C2E59 /* AddAlarmVC.swift in Sources */,
 				EDE97C56257CB3AA004C2E59 /* AlarmRepeatCell.swift in Sources */,
 				EDE97BE125729404004C2E59 /* WorldClockCell.swift in Sources */,

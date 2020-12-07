@@ -444,6 +444,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="soundLabel" destination="1a2-J1-3yP" id="slz-T8-jjB"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlarmAgainCell" id="gDk-26-v0y" customClass="AlarmAgainCell" customModule="iOS_Clock_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
@@ -512,7 +515,7 @@
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zL3-Ub-AhB"/>
@@ -530,7 +533,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znQ-HL-FUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2411" y="-200"/>
+            <point key="canvasLocation" x="2403" y="-238"/>
+        </scene>
+        <!--Alarm SoundVC-->
+        <scene sceneID="dTK-gv-uqB">
+            <objects>
+                <viewController storyboardIdentifier="AlarmSoundVC" id="7SC-Jg-0Dp" customClass="AlarmSoundVC" customModule="iOS_Clock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yXm-NG-vao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n9M-q9-Gwy">
+                                <rect key="frame" x="0.0" y="74" width="414" height="650"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="650" id="djo-hK-hVp"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoundCell" id="uYF-Ui-FeT" customClass="SoundCell" customModule="iOS_Clock_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uYF-Ui-FeT" id="Upq-NY-zjr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRP-jC-n5a">
+                                                    <rect key="frame" x="25" y="11.5" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.17255190009999999" green="0.17254382369999999" blue="0.17254930730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="DRP-jC-n5a" firstAttribute="leading" secondItem="Upq-NY-zjr" secondAttribute="leading" constant="25" id="e8j-bW-A9r"/>
+                                                <constraint firstItem="DRP-jC-n5a" firstAttribute="centerY" secondItem="Upq-NY-zjr" secondAttribute="centerY" id="viE-Xb-bjn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="songLabel" destination="DRP-jC-n5a" id="D1d-t4-F25"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xu3-PZ-4vg"/>
+                        <color key="backgroundColor" red="0.090197719630000006" green="0.08620532602" blue="0.090196706350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="n9M-q9-Gwy" firstAttribute="leading" secondItem="Xu3-PZ-4vg" secondAttribute="leading" id="48n-nh-XFo"/>
+                            <constraint firstItem="Xu3-PZ-4vg" firstAttribute="trailing" secondItem="n9M-q9-Gwy" secondAttribute="trailing" id="QGB-8E-qlT"/>
+                            <constraint firstItem="n9M-q9-Gwy" firstAttribute="top" secondItem="Xu3-PZ-4vg" secondAttribute="top" constant="30" id="s5A-XB-RVx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="soundTableView" destination="n9M-q9-Gwy" id="5d7-9j-9tM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juy-Iu-1HD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3210" y="-581"/>
         </scene>
         <!--Alarm RepeatVC-->
         <scene sceneID="NuI-2P-tI2">

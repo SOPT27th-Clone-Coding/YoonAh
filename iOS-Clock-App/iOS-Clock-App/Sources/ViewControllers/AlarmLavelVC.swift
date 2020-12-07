@@ -27,6 +27,7 @@ class AlarmLavelVC: UIViewController {
     }
     
     func setUp() {
+        
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .orange
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)

@@ -10,6 +10,7 @@
 		2C43DB9D403224F088A722A7 /* Pods_iOS_Clock_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */; };
 		ED9554F3257E0FFD00D90861 /* AlarmSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */; };
 		ED9554F6257E11FD00D90861 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F5257E11FD00D90861 /* SoundCell.swift */; };
+		EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5141225810EED0046B344 /* StopWatchVC.swift */; };
 		EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */; };
 		EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */; };
 		EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BA0256F53D4004C2E59 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Clock_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundVC.swift; sourceTree = "<group>"; };
 		ED9554F5257E11FD00D90861 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		EDA5141225810EED0046B344 /* StopWatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchVC.swift; sourceTree = "<group>"; };
 		EDE97B99256F53D4004C2E59 /* iOS-Clock-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Clock-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				EDE97C61257CE90B004C2E59 /* AlarmRepeatVC.swift */,
 				EDE97C67257D2135004C2E59 /* AlarmLavelVC.swift */,
 				ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */,
+				EDA5141225810EED0046B344 /* StopWatchVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				EDE97C47257C7BD0004C2E59 /* AlarmCell.swift in Sources */,
 				EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */,
 				EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */,
+				EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */,
 				EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */,
 				EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */,
 				EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */,

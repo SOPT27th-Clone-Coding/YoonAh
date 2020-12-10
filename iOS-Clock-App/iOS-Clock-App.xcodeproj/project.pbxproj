@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C43DB9D403224F088A722A7 /* Pods_iOS_Clock_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */; };
+		ED469F68258248FB005BAC33 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED469F67258248FB005BAC33 /* RecordCell.swift */; };
 		ED9554F3257E0FFD00D90861 /* AlarmSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */; };
 		ED9554F6257E11FD00D90861 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F5257E11FD00D90861 /* SoundCell.swift */; };
 		EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5141225810EED0046B344 /* StopWatchVC.swift */; };
@@ -42,6 +43,7 @@
 		4C7BA35B4BA55D4CB70C1416 /* Pods-iOS-Clock-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.release.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.release.xcconfig"; sourceTree = "<group>"; };
 		535F2A2E41B496BE89F65A26 /* Pods-iOS-Clock-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Clock-App.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Clock-App/Pods-iOS-Clock-App.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACD3497FEFB4A2ED915257D /* Pods_iOS_Clock_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Clock_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED469F67258248FB005BAC33 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		ED9554F2257E0FFD00D90861 /* AlarmSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundVC.swift; sourceTree = "<group>"; };
 		ED9554F5257E11FD00D90861 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
 		EDA5141225810EED0046B344 /* StopWatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchVC.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				EDE97C5E257CB42A004C2E59 /* AlarmAgainCell.swift */,
 				EDE97C64257D1004004C2E59 /* RepeatCell.swift */,
 				ED9554F5257E11FD00D90861 /* SoundCell.swift */,
+				ED469F67258248FB005BAC33 /* RecordCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */,
 				EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */,
 				EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */,
+				ED469F68258248FB005BAC33 /* RecordCell.swift in Sources */,
 				EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */,
 				EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */,
 				EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */,

@@ -9,7 +9,10 @@ import UIKit
 
 class RecordCell: UITableViewCell {
     static let identifier = "RecordCell"
-
+    
+    @IBOutlet weak var labCountLabel: UILabel!
+    @IBOutlet weak var labRecordLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

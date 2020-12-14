@@ -878,14 +878,95 @@
         <!--타이머-->
         <scene sceneID="i0a-UE-d8P">
             <objects>
-                <viewController id="cSs-r4-6qv" sceneMemberID="viewController">
+                <viewController id="cSs-r4-6qv" customClass="TimerVC" customModule="iOS_Clock_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IzA-0I-Y84">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgP-c4-EHu">
+                                <rect key="frame" x="0.0" y="164" width="414" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <locale key="locale" localeIdentifier="ko_KR"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW5-Uz-V71">
+                                <rect key="frame" x="25" y="495" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.17255190009999999" green="0.17254382369999999" blue="0.17254930730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Nce-lY-r75"/>
+                                    <constraint firstAttribute="width" constant="70" id="cMe-uq-vd5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1S5-A4-MTI">
+                                <rect key="frame" x="319" y="495" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.00017780809140000001" green="0.56498181820000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="hf7-eo-oHE"/>
+                                    <constraint firstAttribute="height" constant="70" id="vGS-bh-0yE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBz-dz-d1g">
+                                <rect key="frame" x="25" y="595" width="364" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이머 종료 시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5e-oz-x4o">
+                                        <rect key="frame" x="20" y="9.5" width="97" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whM-Zg-VIy">
+                                        <rect key="frame" x="302" y="9.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17255190009999999" green="0.17254382369999999" blue="0.17254930730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HQi-Nt-BoK"/>
+                                    <constraint firstItem="R5e-oz-x4o" firstAttribute="leading" secondItem="XBz-dz-d1g" secondAttribute="leading" constant="20" id="JMA-Cm-e0P"/>
+                                    <constraint firstItem="R5e-oz-x4o" firstAttribute="centerY" secondItem="XBz-dz-d1g" secondAttribute="centerY" id="OBZ-sd-RXO"/>
+                                    <constraint firstItem="whM-Zg-VIy" firstAttribute="centerY" secondItem="XBz-dz-d1g" secondAttribute="centerY" id="PEI-QT-uq4"/>
+                                    <constraint firstItem="whM-Zg-VIy" firstAttribute="top" secondItem="R5e-oz-x4o" secondAttribute="top" id="U4E-rp-Tpm"/>
+                                    <constraint firstAttribute="trailing" secondItem="whM-Zg-VIy" secondAttribute="trailing" constant="20" id="gQs-gB-kLX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Ic-tl-NTa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XBz-dz-d1g" firstAttribute="top" secondItem="eW5-Uz-V71" secondAttribute="bottom" constant="30" id="48C-f4-3aZ"/>
+                            <constraint firstItem="WgP-c4-EHu" firstAttribute="trailing" secondItem="6Ic-tl-NTa" secondAttribute="trailing" id="5rU-eU-t6b"/>
+                            <constraint firstItem="WgP-c4-EHu" firstAttribute="top" secondItem="6Ic-tl-NTa" secondAttribute="top" constant="120" id="6JH-HZ-v3i"/>
+                            <constraint firstItem="WgP-c4-EHu" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" id="Tsn-iy-vUy"/>
+                            <constraint firstItem="eW5-Uz-V71" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" constant="25" id="Vsr-VX-6Gh"/>
+                            <constraint firstItem="eW5-Uz-V71" firstAttribute="top" secondItem="WgP-c4-EHu" secondAttribute="bottom" constant="115" id="eI0-k7-ioJ"/>
+                            <constraint firstItem="6Ic-tl-NTa" firstAttribute="trailing" secondItem="1S5-A4-MTI" secondAttribute="trailing" constant="25" id="jhe-gI-z3B"/>
+                            <constraint firstItem="6Ic-tl-NTa" firstAttribute="trailing" secondItem="XBz-dz-d1g" secondAttribute="trailing" constant="25" id="kYr-3R-2Ie"/>
+                            <constraint firstItem="XBz-dz-d1g" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" constant="25" id="tzy-Lh-nKW"/>
+                            <constraint firstItem="1S5-A4-MTI" firstAttribute="top" secondItem="eW5-Uz-V71" secondAttribute="top" id="wR4-Bk-fZB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="타이머" image="timer" catalog="system" selectedImage="timer" id="pJj-Ky-x4I"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="eW5-Uz-V71" id="rMS-Ta-sQF"/>
+                        <outlet property="musicSelectView" destination="XBz-dz-d1g" id="ayN-im-BTs"/>
+                        <outlet property="startButton" destination="1S5-A4-MTI" id="bDG-On-DMd"/>
+                        <outlet property="timePicker" destination="WgP-c4-EHu" id="Sdk-BD-yCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeU-hJ-mjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

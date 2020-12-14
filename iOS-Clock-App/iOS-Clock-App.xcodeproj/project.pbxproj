@@ -13,6 +13,9 @@
 		ED9554F6257E11FD00D90861 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9554F5257E11FD00D90861 /* SoundCell.swift */; };
 		EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5141225810EED0046B344 /* StopWatchVC.swift */; };
 		EDB732EC2587530A00B74BF6 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB732EB2587530A00B74BF6 /* TimerVC.swift */; };
+		EDB732F1258783C900B74BF6 /* TimerMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB732F0258783C900B74BF6 /* TimerMusicVC.swift */; };
+		EDB732F525878A2000B74BF6 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB732F425878A2000B74BF6 /* MusicCell.swift */; };
+		EDB732F92587A40400B74BF6 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB732F82587A40400B74BF6 /* CircularProgressView.swift */; };
 		EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */; };
 		EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */; };
 		EDE97BA1256F53D4004C2E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE97BA0256F53D4004C2E59 /* ViewController.swift */; };
@@ -49,6 +52,9 @@
 		ED9554F5257E11FD00D90861 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
 		EDA5141225810EED0046B344 /* StopWatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchVC.swift; sourceTree = "<group>"; };
 		EDB732EB2587530A00B74BF6 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		EDB732F0258783C900B74BF6 /* TimerMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMusicVC.swift; sourceTree = "<group>"; };
+		EDB732F425878A2000B74BF6 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		EDB732F82587A40400B74BF6 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		EDE97B99256F53D4004C2E59 /* iOS-Clock-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Clock-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE97B9C256F53D4004C2E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE97B9E256F53D4004C2E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +195,15 @@
 			isa = PBXGroup;
 			children = (
 				EDB732EB2587530A00B74BF6 /* TimerVC.swift */,
+				EDB732F0258783C900B74BF6 /* TimerMusicVC.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		EDB732F325878A0500B74BF6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				EDB732F425878A2000B74BF6 /* MusicCell.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -277,6 +292,7 @@
 		EDE97BD6257289C1004C2E59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDB732F82587A40400B74BF6 /* CircularProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +300,7 @@
 		EDE97BD7257289C7004C2E59 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EDB732F325878A0500B74BF6 /* Timer */,
 				EDB732E325874BC400B74BF6 /* Stopwatch */,
 				EDB732E225874BB600B74BF6 /* WorldClock */,
 				EDB732E125874B9800B74BF6 /* Alarm */,
@@ -425,9 +442,12 @@
 				EDE97C47257C7BD0004C2E59 /* AlarmCell.swift in Sources */,
 				EDE97BEA25734A21004C2E59 /* AddWorldClockVC.swift in Sources */,
 				EDE97BE42572948D004C2E59 /* WorldTime.swift in Sources */,
+				EDB732F1258783C900B74BF6 /* TimerMusicVC.swift in Sources */,
 				EDA5141325810EED0046B344 /* StopWatchVC.swift in Sources */,
 				ED469F68258248FB005BAC33 /* RecordCell.swift in Sources */,
 				EDE97C5F257CB42A004C2E59 /* AlarmAgainCell.swift in Sources */,
+				EDB732F525878A2000B74BF6 /* MusicCell.swift in Sources */,
+				EDB732F92587A40400B74BF6 /* CircularProgressView.swift in Sources */,
 				EDE97B9D256F53D4004C2E59 /* AppDelegate.swift in Sources */,
 				EDE97C62257CE90B004C2E59 /* AlarmRepeatVC.swift in Sources */,
 				EDE97B9F256F53D4004C2E59 /* SceneDelegate.swift in Sources */,

@@ -905,6 +905,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpCancel:" destination="cSs-r4-6qv" eventType="touchUpInside" id="lhw-rJ-38K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1S5-A4-MTI">
                                 <rect key="frame" x="319" y="495" width="70" height="70"/>
@@ -917,55 +920,72 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpStart:" destination="cSs-r4-6qv" eventType="touchUpInside" id="uvM-E9-fua"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBz-dz-d1g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd9-mY-h9N">
                                 <rect key="frame" x="25" y="595" width="364" height="40"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이머 종료 시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5e-oz-x4o">
-                                        <rect key="frame" x="20" y="9.5" width="97" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whM-Zg-VIy">
-                                        <rect key="frame" x="302" y="9.5" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.17255190009999999" green="0.17254382369999999" blue="0.17254930730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HQi-Nt-BoK"/>
-                                    <constraint firstItem="R5e-oz-x4o" firstAttribute="leading" secondItem="XBz-dz-d1g" secondAttribute="leading" constant="20" id="JMA-Cm-e0P"/>
-                                    <constraint firstItem="R5e-oz-x4o" firstAttribute="centerY" secondItem="XBz-dz-d1g" secondAttribute="centerY" id="OBZ-sd-RXO"/>
-                                    <constraint firstItem="whM-Zg-VIy" firstAttribute="centerY" secondItem="XBz-dz-d1g" secondAttribute="centerY" id="PEI-QT-uq4"/>
-                                    <constraint firstItem="whM-Zg-VIy" firstAttribute="top" secondItem="R5e-oz-x4o" secondAttribute="top" id="U4E-rp-Tpm"/>
-                                    <constraint firstAttribute="trailing" secondItem="whM-Zg-VIy" secondAttribute="trailing" constant="20" id="gQs-gB-kLX"/>
+                                    <constraint firstAttribute="height" constant="40" id="HsU-1T-fu5"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpMusicSelect:" destination="cSs-r4-6qv" eventType="touchUpInside" id="G2O-f4-E1U"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이머 종료 시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohq-Aq-ef8">
+                                <rect key="frame" x="45" y="606" width="86" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음악" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiD-aP-bew">
+                                <rect key="frame" x="343" y="606" width="26" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-V2-AU5">
+                                <rect key="frame" x="103.5" y="274" width="207" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Ic-tl-NTa"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XBz-dz-d1g" firstAttribute="top" secondItem="eW5-Uz-V71" secondAttribute="bottom" constant="30" id="48C-f4-3aZ"/>
                             <constraint firstItem="WgP-c4-EHu" firstAttribute="trailing" secondItem="6Ic-tl-NTa" secondAttribute="trailing" id="5rU-eU-t6b"/>
                             <constraint firstItem="WgP-c4-EHu" firstAttribute="top" secondItem="6Ic-tl-NTa" secondAttribute="top" constant="120" id="6JH-HZ-v3i"/>
+                            <constraint firstItem="2Q5-V2-AU5" firstAttribute="top" secondItem="6Ic-tl-NTa" secondAttribute="top" constant="230" id="A02-GI-KeG"/>
+                            <constraint firstItem="6Ic-tl-NTa" firstAttribute="trailing" secondItem="yd9-mY-h9N" secondAttribute="trailing" constant="25" id="LkH-sQ-2rc"/>
+                            <constraint firstItem="aiD-aP-bew" firstAttribute="centerY" secondItem="yd9-mY-h9N" secondAttribute="centerY" id="LxG-lI-WdP"/>
+                            <constraint firstItem="2Q5-V2-AU5" firstAttribute="centerX" secondItem="IzA-0I-Y84" secondAttribute="centerX" id="Ndv-gJ-bcF"/>
+                            <constraint firstItem="yd9-mY-h9N" firstAttribute="trailing" secondItem="aiD-aP-bew" secondAttribute="trailing" constant="20" id="PUz-Yn-6NB"/>
                             <constraint firstItem="WgP-c4-EHu" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" id="Tsn-iy-vUy"/>
                             <constraint firstItem="eW5-Uz-V71" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" constant="25" id="Vsr-VX-6Gh"/>
+                            <constraint firstItem="Ohq-Aq-ef8" firstAttribute="leading" secondItem="yd9-mY-h9N" secondAttribute="leading" constant="20" id="Xof-2w-o3V"/>
                             <constraint firstItem="eW5-Uz-V71" firstAttribute="top" secondItem="WgP-c4-EHu" secondAttribute="bottom" constant="115" id="eI0-k7-ioJ"/>
+                            <constraint firstItem="yd9-mY-h9N" firstAttribute="top" secondItem="eW5-Uz-V71" secondAttribute="bottom" constant="30" id="eJ8-IA-vZ5"/>
                             <constraint firstItem="6Ic-tl-NTa" firstAttribute="trailing" secondItem="1S5-A4-MTI" secondAttribute="trailing" constant="25" id="jhe-gI-z3B"/>
-                            <constraint firstItem="6Ic-tl-NTa" firstAttribute="trailing" secondItem="XBz-dz-d1g" secondAttribute="trailing" constant="25" id="kYr-3R-2Ie"/>
-                            <constraint firstItem="XBz-dz-d1g" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" constant="25" id="tzy-Lh-nKW"/>
+                            <constraint firstItem="yd9-mY-h9N" firstAttribute="leading" secondItem="6Ic-tl-NTa" secondAttribute="leading" constant="25" id="vEU-N7-ACw"/>
+                            <constraint firstItem="Ohq-Aq-ef8" firstAttribute="centerY" secondItem="yd9-mY-h9N" secondAttribute="centerY" id="voQ-Ni-jsP"/>
                             <constraint firstItem="1S5-A4-MTI" firstAttribute="top" secondItem="eW5-Uz-V71" secondAttribute="top" id="wR4-Bk-fZB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="타이머" image="timer" catalog="system" selectedImage="timer" id="pJj-Ky-x4I"/>
                     <connections>
                         <outlet property="cancelButton" destination="eW5-Uz-V71" id="rMS-Ta-sQF"/>
-                        <outlet property="musicSelectView" destination="XBz-dz-d1g" id="ayN-im-BTs"/>
+                        <outlet property="musicButton" destination="yd9-mY-h9N" id="I6p-Kx-5e0"/>
+                        <outlet property="musicLabel" destination="aiD-aP-bew" id="AFj-IM-e8J"/>
                         <outlet property="startButton" destination="1S5-A4-MTI" id="bDG-On-DMd"/>
                         <outlet property="timePicker" destination="WgP-c4-EHu" id="Sdk-BD-yCH"/>
+                        <outlet property="timerLabel" destination="2Q5-V2-AU5" id="1sg-cw-4M6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeU-hJ-mjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

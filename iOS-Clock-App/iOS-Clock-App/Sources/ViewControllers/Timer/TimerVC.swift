@@ -16,7 +16,6 @@ class TimerVC: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var CircularProgress: CircularProgressView!
     
-    var isProgress: Bool = false
     var isStart: Bool = false
     var alarmTime: String?
     var timer: Timer?
@@ -53,6 +52,15 @@ class TimerVC: UIViewController {
         CircularProgress.trackColor = UIColor.darkGray
         CircularProgress.progressColor = UIColor.orange
         CircularProgress.tag = 101
+    }
+    
+    func AlertAlarm(title : String, message : String, text : String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle:UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: text, style: UIAlertAction.Style.cancel, handler: nil)
+        
+        alertController.addAction(okButton)
+        
+        return self.present(alertController, animated: true, completion: nil)
     }
     
     @objc func animateProgress() {
@@ -99,7 +107,6 @@ class TimerVC: UIViewController {
         timerLabel.text = timeFormatter(currentTimeCount)
         CircularProgress.reloadInputViews()
         if currentTimeCount == 0 {
-            isProgress = false
             isStart = false
             timePicker.isHidden = false
             timerLabel.isHidden = true
@@ -111,6 +118,8 @@ class TimerVC: UIViewController {
             startButton.setTitle("시작", for: .normal)
             startButton.setTitleColor(UIColor.init(red: 142/255, green: 250/255, blue: 0, alpha: 1), for: .normal)
             startButton.backgroundColor = UIColor.init(red: 50/255, green: 76/255, blue: 21/255, alpha: 1)
+            
+            AlertAlarm(title: "타이머 종료", message: "지정한 시간이 완료되었습니다", text: "확인")
         }
     }
     
@@ -118,7 +127,6 @@ class TimerVC: UIViewController {
         if isStart == false {
             timeSetUp()
             
-            isProgress = true
             isStart = true
             timePicker.isHidden = true
             timerLabel.isHidden = false
@@ -134,14 +142,12 @@ class TimerVC: UIViewController {
             
             self.perform(#selector(animateProgress), with: nil, afterDelay: 0.0)
         } else if isStart && timer!.isValid {
-            isProgress = false
             startButton.setTitle("재개", for: .normal)
             startButton.setTitleColor(UIColor.init(red: 142/255, green: 250/255, blue: 0, alpha: 1), for: .normal)
             startButton.backgroundColor = UIColor.init(red: 50/255, green: 76/255, blue: 21/255, alpha: 1)
             timer?.invalidate()
             
         } else if isStart && !(timer!.isValid) {
-            isProgress = true
             startButton.setTitle("일시 정지", for: .normal)
             startButton.setTitleColor(UIColor.init(red: 248/255, green: 209/255, blue: 129/255, alpha: 1), for: .normal)
             startButton.backgroundColor = UIColor.init(red: 244/255, green: 134/255, blue: 60/255, alpha: 1)
@@ -155,7 +161,6 @@ class TimerVC: UIViewController {
         CircularProgress.isHidden = true
         
         timer?.invalidate()
-        isProgress = false
         isStart = false
         cancelButton.isEnabled = false
         currentTimeCount = 0

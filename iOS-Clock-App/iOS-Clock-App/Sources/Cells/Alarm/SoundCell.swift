@@ -23,5 +23,4 @@ class SoundCell: UITableViewCell {
     func setSongLabel(song: String) {
         songLabel.text = song
     }
-
 }

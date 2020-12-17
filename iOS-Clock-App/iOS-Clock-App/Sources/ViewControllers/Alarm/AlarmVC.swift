@@ -11,16 +11,16 @@ import SnapKit
 class AlarmVC: UIViewController {
     @IBOutlet weak var alarmTableView: UITableView!
     @IBOutlet weak var editButton: UIButton!
-    var alarm: [Alarm] = []
+    
+    private var alarm: [Alarm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SetAlarmData()
-        alarmTableView.delegate = self
-        alarmTableView.dataSource = self
+        setAlarmData()
+        setAlarmTableView()
     }
     
-    func SetAlarmData() {
+    private func setAlarmData() {
         alarm.append(contentsOf: [
             Alarm(dayAndNight: "오전", alarmTime: "6:00"),
             Alarm(dayAndNight: "오전", alarmTime: "6:30"),
@@ -29,6 +29,11 @@ class AlarmVC: UIViewController {
             Alarm(dayAndNight: "오전", alarmTime: "8:00"),
             Alarm(dayAndNight: "오전", alarmTime: "8:30")
         ])
+    }
+    
+    private func setAlarmTableView() {
+        alarmTableView.delegate = self
+        alarmTableView.dataSource = self
     }
     
     @IBAction func touchUpEdit(_ sender: Any) {
@@ -47,7 +52,6 @@ class AlarmVC: UIViewController {
             return
         }
         let vc = UINavigationController(rootViewController: dvc)
-        vc.modalPresentationStyle = .pageSheet
         dvc.saveData = { time in
             var timeArray = time.components(separatedBy: " ")
             var dayNnight: String = " "
@@ -65,6 +69,7 @@ class AlarmVC: UIViewController {
             self.alarm.append(Alarm(dayAndNight: "\(dayNnight)", alarmTime:"\(timeArray[1])"))
             self.alarmTableView.reloadData()
         }
+        vc.modalPresentationStyle = .pageSheet
         present(vc, animated: true, completion: nil)
     }
 }

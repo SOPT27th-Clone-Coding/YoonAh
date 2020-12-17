@@ -11,36 +11,35 @@ class AddAlarmVC: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var alarmTableView: UITableView!
     
-    var sampleData: [String] = []
-    var sampleSong: [String] = []
-    var lavelString: String?
-    
     var saveData: ((String) -> Void)?
+    
+    private var sampleData: [String] = []
+    private var sampleSong: [String] = []
+    private var lavelString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        setUp()
-        alarmTableView.delegate = self
-        alarmTableView.dataSource = self
+        setAlarmTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func setUp() {
+    private func setAlarmTableView() {
+        alarmTableView.delegate = self
+        alarmTableView.dataSource = self
         alarmTableView.separatorColor = .darkGray
         UILabel.appearance(whenContainedInInstancesOf: [UIDatePicker.self]).textColor = UIColor.darkGray
     }
     
-    func dateLoad() {
+    private func dateLoad() {
         let currentTime = Date()
         let interval = 30
         self.getInitialTime(currentTime: currentTime, interval: interval)
     }
     
-    func getInitialTime(currentTime: Date, interval: Int) {
+    private func getInitialTime(currentTime: Date, interval: Int) {
         var components = Calendar.current.dateComponents([.minute, .hour], from: currentTime)
         let minute = components.minute
         let remainder = ceil(Float(minute!/interval))
@@ -50,7 +49,7 @@ class AddAlarmVC: UIViewController {
         self.getDate(date: finalTime)
     }
     
-    func getDate(date: Date){
+    private func getDate(date: Date){
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = DateFormatter.Style.short
         dateFormatter.timeZone = TimeZone.current

@@ -9,10 +9,11 @@ import UIKit
 
 class SleepAlarmCell: UITableViewCell {
     static let identifier = "SleepAlarmCell"
-    var actionButton: (() -> Void)? = nil
 
     @IBOutlet weak var alarmLabel: UILabel!
     @IBOutlet weak var editButton: UIButton!
+    
+    var actionButton: (() -> Void)? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,10 +21,10 @@ class SleepAlarmCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        setUp()
+        setEditButton()
     }
     
-    func setUp() {
+    private func setEditButton() {
         editButton.layer.masksToBounds = true
         editButton.layer.cornerRadius = 10
     }

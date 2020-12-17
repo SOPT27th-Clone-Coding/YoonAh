@@ -9,6 +9,7 @@ import UIKit
 
 class AlarmRepeatCell: UITableViewCell {
     static let identifier = "AlarmRepeatCell"
+    
     @IBOutlet weak var repeatLabel: UILabel!
     
     override func awakeFromNib() {

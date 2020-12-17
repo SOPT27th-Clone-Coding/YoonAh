@@ -11,26 +11,26 @@ import SnapKit
 class WorldClockVC: UIViewController {
     @IBOutlet weak var worldClockTableView: UITableView!
     @IBOutlet weak var editButton: UIButton!
-    var headerView = UIView()
-    var headerLabel = UILabel()
     
-    var time: [WorldTime] = []
+    private var time: [WorldTime] = []
+    
+    private var headerView = UIView()
+    private var headerLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setWorldClockTableView()
         setTimeData()
         setUpHeader()
-        worldClockTableView.delegate = self
-        worldClockTableView.dataSource = self
     }
     
-    func setTimeData() {
+    private func setTimeData() {
         time.append(contentsOf: [
             WorldTime(startWord: "ㅅ", country: "서울", timeDifference: "+0", dayAndNight: "오전", time: "1:48")
         ])
     }
     
-    func setUpHeader() {
+    private func setUpHeader() {
         headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 55))
         headerLabel = UILabel(frame: headerView.bounds)
         headerView.addSubview(headerLabel)
@@ -41,8 +41,12 @@ class WorldClockVC: UIViewController {
             make.top.equalToSuperview().inset(10)
             make.leading.equalToSuperview().inset(25)
         }
-        
         worldClockTableView.tableHeaderView = headerView
+    }
+    
+    private func setWorldClockTableView() {
+        worldClockTableView.delegate = self
+        worldClockTableView.dataSource = self
     }
     
     @IBAction func touchUpAdd(_ sender: Any) {
@@ -53,7 +57,6 @@ class WorldClockVC: UIViewController {
             self.time.append(country)
             self.worldClockTableView.reloadData()
         }
-        
         dvc.modalPresentationStyle = .pageSheet
         present(dvc, animated: true, completion: nil)
     }

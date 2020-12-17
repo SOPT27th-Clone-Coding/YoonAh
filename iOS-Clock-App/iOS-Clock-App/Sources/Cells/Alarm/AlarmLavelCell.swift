@@ -9,6 +9,7 @@ import UIKit
 
 class AlarmLavelCell: UITableViewCell {
     static let identifier = "AlarmLavelCell"
+    
     @IBOutlet weak var lavelLabel: UILabel!
     
     override func awakeFromNib() {

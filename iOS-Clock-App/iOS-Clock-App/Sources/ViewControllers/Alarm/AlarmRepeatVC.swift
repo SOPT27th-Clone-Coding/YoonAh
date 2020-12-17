@@ -12,15 +12,14 @@ class AlarmRepeatVC: UIViewController {
     
     var saveDateData: (([String]) -> Void)?
     
-    var date: [String] = ["일", "월", "화", "수", "목", "금", "토"]
-    var selectDate: [Bool] = [false, false, false, false, false, false, false]
-    var saveDate: [String] = []
+    private var date: [String] = ["일", "월", "화", "수", "목", "금", "토"]
+    private var selectDate: [Bool] = [false, false, false, false, false, false, false]
+    private var saveDate: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        repeatTableView.delegate = self
-        repeatTableView.dataSource = self
-        setUp()
+        setUpNavigationController()
+        setRepeatTableView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,11 +29,16 @@ class AlarmRepeatVC: UIViewController {
         }
     }
     
-    func setUp() {
+    private func setUpNavigationController() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .orange
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+       self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
+    private func setRepeatTableView() {
+        repeatTableView.delegate = self
+        repeatTableView.dataSource = self
     }
 }
 

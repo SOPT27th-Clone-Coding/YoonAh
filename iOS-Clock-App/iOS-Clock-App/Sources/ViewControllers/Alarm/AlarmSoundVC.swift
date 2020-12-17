@@ -12,22 +12,30 @@ class AlarmSoundVC: UIViewController {
     
     var saveSongs: (([String]) -> Void)?
     
-    var song: [String] = ["없음", "신호등", "녹차", "일루미네이트", "실크", "우주", "정점", "절정", "해변가", "희망", "클래식", "크리스탈", "파장", "차임벨", "프레스토"]
-    var saveSong: [String] = []
+    private var song: [String] = ["없음", "신호등", "녹차", "일루미네이트", "실크", "우주", "정점", "절정", "해변가", "희망", "클래식", "크리스탈", "파장", "차임벨", "프레스토"]
+    private var saveSong: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        soundTableView.delegate = self
-        soundTableView.dataSource = self
-        saveSong.removeAll()
-        setUp()
+        setData()
+        setUpNavigationController()
+        setSoundTableView()
     }
     
-    func setUp() {
+    private func setUpNavigationController() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .orange
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
+    private func setData() {
+        saveSong.removeAll()
+    }
+    
+    private func setSoundTableView() {
+        soundTableView.delegate = self
+        soundTableView.dataSource = self
     }
 }
 

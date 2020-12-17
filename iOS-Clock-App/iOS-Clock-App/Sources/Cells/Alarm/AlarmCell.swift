@@ -27,6 +27,7 @@ class AlarmCell: UITableViewCell {
         alarmTimeLabel.text = alarm.alarmTime
         dayAndNightLabel.text = alarm.dayAndNight
     }
+    
     @IBAction func touchUpSwitch(_ sender: Any) {
         if alarmSwitch.isOn {
             alarmTimeLabel.textColor = .white

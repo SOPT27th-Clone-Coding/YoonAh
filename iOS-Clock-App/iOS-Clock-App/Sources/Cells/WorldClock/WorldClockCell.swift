@@ -8,12 +8,12 @@
 import UIKit
 
 class WorldClockCell: UITableViewCell {
+    static let identifier = "WorldClockCell"
+    
     @IBOutlet weak var timeDifferenceLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var dayAndNightLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    
-    static let identifier = "WorldClockCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -14,9 +14,8 @@ class AlarmLavelVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUp()
-        lavelTextField.delegate = self
-        lavelTextField.becomeFirstResponder()
+        setUpNavigationController()
+        setLavelTextField()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -26,12 +25,17 @@ class AlarmLavelVC: UIViewController {
         }
     }
     
-    func setUp() {
+    private func setUpNavigationController() {
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .orange
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 1)
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
+    private func setLavelTextField() {
+        lavelTextField.delegate = self
+        lavelTextField.becomeFirstResponder()
     }
 }
 

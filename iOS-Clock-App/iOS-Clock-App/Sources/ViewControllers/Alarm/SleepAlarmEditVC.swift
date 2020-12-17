@@ -14,6 +14,10 @@ class SleepAlarmEditVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setAppSettingButton()
+    }
+    
+    private func setAppSettingButton() {
         appSettingButton.layer.masksToBounds = true
         appSettingButton.layer.cornerRadius = 20
     }

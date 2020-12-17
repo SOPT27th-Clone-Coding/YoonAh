@@ -8,21 +8,25 @@
 import UIKit
 
 class AddWorldClockVC: UIViewController {
-    var sendCountryData: ((WorldTime) -> ())?
-    
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var countryTableView: UITableView!
     
-    var countrys: [WorldTime] = []
+    var sendCountryData: ((WorldTime) -> ())?
+    
+    private var countrys: [WorldTime] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTimeData()
+        setCountryTableView()
+    }
+    
+    private func setCountryTableView() {
         countryTableView.delegate = self
         countryTableView.dataSource = self
     }
     
-    func setTimeData(){
+    private func setTimeData(){
     countrys.append(contentsOf: [
         WorldTime(startWord: "ㅂ", country: "보츠와나", timeDifference: "-10", dayAndNight: "오후", time: "10:48"),
         WorldTime(startWord: "ㅍ", country: "팔레스타인", timeDifference: "+10", dayAndNight: "오전", time: "11:48"),
@@ -68,7 +72,6 @@ extension AddWorldClockVC: UITableViewDataSource {
         }
         cell.selectionStyle = .none
         cell.countryLabel.text = self.countrys.filter{ $0.startWord == character }[indexPath.row].country
-        
         return cell
     }
     
